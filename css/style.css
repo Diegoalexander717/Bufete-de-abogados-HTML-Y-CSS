@@ -1,0 +1,359 @@
+:root {
+    --color-principal-oscuro: #2c3e50;
+    --color-principal-claro: #e9f0f4;
+    --color-azul-boton: #3498db;
+    --fuente-principal: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    background-color: white;
+}
+
+.nav-principal {
+    background-color: var(--color-principal-oscuro);
+}
+.nav-principal .nav-link,
+.nav-principal .navbar-brand {
+    color: white !important;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.nav-principal .navbar-brand .logo-text {
+    font-weight: bold;
+    background-color: var(--color-principal-oscuro); 
+    color: white; 
+}
+.nav-principal .nav-link.active {
+    font-weight: bold;
+}
+
+.seccion-bienvenida {
+    background-color: var(--color-principal-claro);
+    padding: 30px;
+    border-radius: 10px;
+    height: 100%; 
+}
+
+.seccion-bienvenida h1 {
+    color: var(--color-principal-oscuro);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.seccion-bienvenida .cita {
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #34495e;
+}
+
+.contenedor-stats {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-numero {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-principal-oscuro);
+}
+
+.stat-etiqueta {
+    font-size: 1rem;
+    color: #7f8c8d; 
+}
+
+.btn-cita {
+    background-color: var(--color-azul-boton);
+    border-color: var(--color-azul-boton);
+    color: white;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn-cita:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.btn-acerca {
+    background-color: white;
+    border: 1px solid var(--color-principal-oscuro);
+    color: var(--color-principal-oscuro);
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.btn-acerca:hover {
+    background-color: var(--color-principal-oscuro);
+    color: white;
+}
+
+.contenedor-carrusel {
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.img-carrusel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+   
+    filter: invert(1);
+}
+
+
+.titulo-servicios {
+    color: var(--color-principal-oscuro);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--color-principal-oscuro);
+    text-underline-offset: 8px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.tarjeta-servicio {
+    border: none;
+    text-align: center;
+    color: inherit;
+    transition: transform 0.3s ease; 
+}
+.tarjeta-servicio:hover {
+    transform: translateY(-5px); 
+    color: inherit; 
+}
+
+.tarjeta-servicio .card-img-top {
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.tarjeta-servicio .card-body {
+    padding: 15px 10px;
+    border: 1px solid #ccc; 
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px; 
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-servicio .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-principal-oscuro);
+    margin-bottom: 5px;
+}
+
+.tarjeta-servicio .card-text {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+
+.footer-principal {
+    background-color: var(--color-principal-oscuro);
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+.iconos-sociales a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.iconos-sociales a:hover {
+    opacity: 1;
+}
+
+.titulo-pagina {
+    color: var(--color-principal-oscuro);
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: left;
+}
+
+.titulo-seccion {
+    color: var(--color-principal-oscuro);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.lista-requisitos {
+    list-style: none;
+    padding-left: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.lista-requisitos li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+
+.lista-requisitos li::before {
+    content: "—";
+    color: var(--color-principal-oscuro);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.logos-windows {
+    padding-top: 20px;
+}
+
+.logo-windows-img-contenedor {
+    max-width: 250px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 0.95rem;
+    color: #555;
+    padding-top: 10px;
+}
+
+
+.seccion-descarga {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #f8f8f8; 
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.seccion-descarga .texto-descarga {
+    flex: 3; 
+    padding-right: 30px;
+}
+
+.seccion-descarga .titulo-descarga {
+    color: var(--color-principal-oscuro);
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.seccion-descarga p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.seccion-descarga .boton-descarga {
+    flex: 1; 
+    text-align: right;
+}
+
+.btn-primary-descarga {
+    background-color: var(--color-principal-oscuro);
+    border-color: var(--color-principal-oscuro);
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    min-width: 180px;
+}
+
+.btn-primary-descarga:hover {
+    background-color: #34495e;
+    border-color: #34495e;
+}
+
+
+@media (max-width: 992px) {
+    .seccion-descarga {
+        flex-direction: column;
+        text-align: center;
+    }
+    .seccion-descarga .texto-descarga {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .seccion-descarga .boton-descarga {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.titulo-contacto-seccion {
+    color: var(--color-principal-oscuro);
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+
+.info-contacto-card {
+    background-color: var(--color-principal-oscuro);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    height: 100%;
+
+.lista-contactos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.lista-contactos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.lista-contactos li i {
+    font-size: 1.2rem;
+    min-width: 20px; 
+}
+
+.mapa-contenedor {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mapa-contenedor .mapa-referencia,
+.mapa-contenedor iframe {
+    width: 100%;
+    height: 400px; 
+    display: block;
+    border-radius: 5px;
+}

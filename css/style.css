@@ -8,6 +8,16 @@
 body {
     font-family: var(--fuente-principal);
     background-color: white;
+    flex-direction: column;   
+    min-height: 100vh;       
+}
+
+main {
+    flex-grow: 1; 
+}
+
+.footer-principal {
+    flex-shrink: 0; 
 }
 
 .nav-principal {
@@ -322,6 +332,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     height: 100%;
+}
 
 .lista-contactos {
     list-style: none;
@@ -393,6 +404,8 @@ body {
     height: 100%; 
     object-fit: cover; 
     display: block; 
+}
+
 .titulo-valores {
     color: var(--color-principal-oscuro);
     font-size: 2rem;

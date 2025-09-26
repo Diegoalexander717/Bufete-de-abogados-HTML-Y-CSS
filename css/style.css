@@ -357,3 +357,73 @@ body {
     display: block;
     border-radius: 5px;
 }
+
+.card-nosotros-principal,
+.card-nosotros-vision-mision {
+    background-color: var(--color-principal-claro); 
+    padding: 15px; 
+    border-radius: 8px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+
+.card-nosotros-principal .card-title,
+.card-nosotros-vision-mision .card-title {
+    color: var(--color-principal-oscuro);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-nosotros-principal .card-text,
+.card-nosotros-vision-mision .card-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card-nosotros-imagen {
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.imagen-principal-nosotros {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    display: block; 
+.titulo-valores {
+    color: var(--color-principal-oscuro);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-valor {
+    background-color: var(--color-principal-claro); 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-valor:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-valor .icono-valor {
+    color: #f39c12; 
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.card-valor .nombre-valor {
+    color: var(--color-principal-oscuro);
+    font-size: 1.1rem; 
+    font-weight: 600;
+}

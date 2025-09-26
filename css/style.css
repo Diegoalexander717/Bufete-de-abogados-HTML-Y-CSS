@@ -7,9 +7,11 @@
 
 body {
     font-family: var(--fuente-principal);
-    background-color: white;
-    flex-direction: column;   
-    min-height: 100vh;       
+background-color: white;
+    display: flex;             
+    flex-direction: column;    
+    min-height: 100vh;                
+   
 }
 
 main {
@@ -376,6 +378,7 @@ main {
     border-radius: 8px;
     border: 1px solid #ccc; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); 
+}
 
 .card-nosotros-principal .card-title,
 .card-nosotros-vision-mision .card-title {

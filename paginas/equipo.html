@@ -42,50 +42,62 @@
             </div>
         </div>
     </nav>
-    <main class="equipo-container">
-        <div class="contenedor-equipo">
-  <!-- Tarjetas del equipo -->
-<aside class="tarjetas-equipo">
-  <div class="tarjeta">
-    <img src="../img/abogada1.jpg" alt="Sofia Morales">
-    <p>Sofia Patricia Morales Duarte</p>
-  </div>
-  <div class="tarjeta">
-    <img src="../img/abogado2.jpg" alt="Roberto Gonzales">
-    <p>Roberto Alejandro Gonzales Arévalo</p>
-  </div>
-  <div class="tarjeta">
-    <img src="../img/abogada3.jpg" alt="Ana Flores">
-    <p>Ana Maria Flores Funes</p>
-  </div>
-  <div class="tarjeta">
-    <img src="../img/abogado4.jpg" alt="Juan Rivera">
-    <p>Juan Antonio Rivera Mejía</p>
-  </div>
-</aside>
+     <!-- MAIN CONTENT -->
+  <main class="container my-5">
+    <div class="row g-4">
 
-  <!-- Perfil detallado -->
-  <section class="perfil-detallado">
-    <div class="card-perfil">
-       <img src="../img/abogado5.jpg" alt="Carlos Lopez">
-      <h2>Carlos Ernesto Lopez Quito</h2>
-      <!-- resto del contenido -->    
-     <p><strong>Descripción:</strong> Abogado confiable y está disponible 24/7, más que un abogado un amigo.</p>
-      <ul>
-        <li><strong>Experiencia:</strong> 20 años</li>
-        <li><strong>Especialidad:</strong> Derecho Mencantil</li>
-        <li><strong>Casos resueltos:</strong> 946</li>
-      </ul>
-    </div>
+      <!-- Tarjetas del equipo -->
+      <aside class="col-12 col-lg-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card text-center p-3">
+              <img src="../img/abogada1.jpg" alt="Sofia Morales" class="rounded-circle mx-auto" width="60" height="60">
+              <p class="mt-2">Sofia Patricia Morales Duarte</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center p-3">
+              <img src="../img/abogado2.jpg" alt="Roberto Gonzales" class="rounded-circle mx-auto" width="60" height="60">
+              <p class="mt-2">Roberto Alejandro Gonzales Arévalo</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center p-3">
+              <img src="../img/abogada3.jpg" alt="Ana Flores" class="rounded-circle mx-auto" width="60" height="60">
+              <p class="mt-2">Ana Maria Flores Funes</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card text-center p-3">
+              <img src="../img/abogado4.jpg" alt="Juan Rivera" class="rounded-circle mx-auto" width="60" height="60">
+              <p class="mt-2">Juan Antonio Rivera Mejía</p>
+            </div>
+          </div>
+        </div>
+      </aside>
 
-    <!-- Botones fuera de la tarjeta -->
-    <div class="botones-acciones">
-      <button><i class="bi bi-telephone-fill"></i> Contactar</button>
-      <button><i class="bi bi-x-lg"></i> Descartar</button>
+      <!-- Perfil detallado -->
+      <section class="col-12 col-lg-6">
+        <div class="card p-4 h-100">
+          <div class="text-center">
+            <img src="../img/abogado5.jpg" alt="Carlos Lopez" class="rounded-circle mb-3" width="60" height="60">
+            <h2 class="h5">Carlos Ernesto Lopez Quito</h2>
+          </div>
+          <p><strong>Descripción:</strong> Abogado confiable y está disponible 24/7, más que un abogado un amigo.</p>
+          <ul class="list-unstyled">
+            <li><strong>Experiencia:</strong> 20 años</li>
+            <li><strong>Especialidad:</strong> Derecho Mercantil</li>
+            <li><strong>Casos resueltos:</strong> 946</li>
+          </ul>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <button class="btn btn-primary"><i class="bi bi-telephone-fill"></i> Contactar</button>
+            <button class="btn btn-outline-secondary"><i class="bi bi-x-lg"></i> Descartar</button>
+          </div>
+        </div>
+      </section>
+
     </div>
-  </section>
-</div>
-    </main>
+  </main>
 
     
     <footer class="footer-principal text-center" id="contactos">
